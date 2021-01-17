@@ -20,7 +20,7 @@ class FollowingFragmentViewModel : ViewModel() {
 
         val url = "https://api.github.com/users/$username/following"
         val client = AsyncHttpClient()
-        client.addHeader("Authorization", "token d530a4b7749f868240ef2ddd609a24ae1f2768d2")
+
         client.addHeader("User-Agent", "request")
 
         client.get(url, object : AsyncHttpResponseHandler() {
